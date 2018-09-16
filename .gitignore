@@ -13,6 +13,8 @@ bin/
 gen/
 out/
 
+node_modules/
+
 # Gradle files
 .gradle/
 build/

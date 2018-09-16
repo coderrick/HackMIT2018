@@ -20,6 +20,111 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!--  Styles  -->
     <link rel="stylesheet" href="css">
+    <style>
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+/*   background: url(http://www.wildtextures.com/wp-content/uploads/2012/05/wildtextures-concrete-wall-background.jpg) */
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 20px;
+  font-family: "Homemade Apple", cursive;
+  font-size: 20px;
+  height: 100%;
+}
+
+.container-fluid {
+  min-height: 100%;
+  position: relative;
+}
+
+.paper {
+  background-image: url(http://jarrodyellets.com/images/paper.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 650px;
+  min-height: 635px;
+  position: relative;
+  margin: 0 auto 20px auto;
+  padding-bottom: 15px;
+}
+
+.title {
+  padding-top: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.mainQuote {
+  padding: 40px 50px 10px 50px;
+  height: 100%;
+}
+
+.writer {
+  text-align: right;
+  padding-top: 20px;
+}
+
+.links {
+  font-size: 0.8em;
+}
+
+.colorBlack {
+  color: #333;
+}
+
+.foot {
+  position: absolute;
+  text-align: center;
+  color: white;
+  left: 0;
+  bottom: 0;
+  font-family: Raleway;
+  font-size: 0.6em;
+  height: 15px;
+  width: 100%;
+  background: #232323;
+}
+
+#tweet {
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+}
+
+#getQuote {
+  position: absolute;
+  bottom: 7%;
+  left: 10%;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+@media all and (max-width: 450px) {
+  body {
+    font-size: 16px;
+  }
+
+  .paper {
+    min-height: 500px;
+  }
+}
+
+    </style>
 </head>
 
 <body>
@@ -35,15 +140,15 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="index.html">About</a>
+                    <a class="mdl-navigation__link" href="trip.html">Trips</a>
                     <a class="mdl-navigation__link" href="developers.html">Generate Report</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Trippin</span>
+            <span class="mdl-layout-title">W'(x)</span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="index.html">About</a>
+                <a class="mdl-navigation__link" href="trip.html">Trips</a>
                 <a class="mdl-navigation__link" href="developers.html">Generate Report</a>
             </nav>
         </div>
@@ -55,36 +160,38 @@
 
             <!--main content will go here-->
 
+            <div class="container-fluid">
 
+                <!--    Main Window -->
+<br>
+<br>
+<br>
+<br>
+                <div class="paper">
+                    <div class="title">
+                        <h2>Analysis</h2>
+                    </div>
+                    <div class="mainQuote">
+                        <p id="quote">Yearly expenses are:</p>
+                        <div class="writer">
+                            <p id="author"></p>
+                        </div>
+                    </div>
 
+                    <!--       Links -->
 
-            <div id="directions-panel"></div>
-            <div id="box" style="position: fixed;display:inline-flex;width: 100%;height: 100%;">
-                <div id="pano" style="position: fixed;width: 100%;height: 100%;top: 0px;"></div>
-                <div id="map" style="position: fixed;width: 100%;height: 100%;top: 0px;"></div>
+                    <div class="links">
+                        <p>
+                            <a href="#" class="colorBlack" id="getQuote">#3048349</a>
+                            <a href="https://twitter.com/intent/tweet?text=" class="colorBlack" id="tweet" target="_blank">Download</a>
+                        </p>
+                    </div>
+                </div>
+             
             </div>
 
 
-            <div id="streetview-controls" style="text-align:center;padding-top: 10px;">
-                <button id="play" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    start
-                </button>
-                <button id="stop" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    Stop
-                </button>
-                <button id="prev" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    prev
-                </button>
-                <button id="next" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    next
-                </button>
-                <button id="load" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    new
-                </button>
-            </div>
-            <button id="toggle" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    Swap
-                  </button>
+
 
 
         </main>

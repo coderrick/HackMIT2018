@@ -109,7 +109,7 @@ function initialize() {
 		//console.log(arguments);
 		//The problem is that generate() isn't changing when this even listener is triggered
 		//TempleUniversity = marker.setPosition()
-		console.log("it is ---" + directions_changed());
+		//console.log("it is ---" + directions_changed());
 		computeTotalDistance(directionsDisplay.getDirections());
 		console.log("new start coord = " + TempleUniversity.A + " : " + TempleUniversity.k);
 		console.log("new end coord = " + somewhere.A + " : " + somewhere.k);
